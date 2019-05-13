@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iiexamengrupo0110.Caso1_Decorator;
+package Caso2_Bridge;
 
 /**
  *
  * @author eadan
  */
-public interface InputStream {
-    byte read();
+public class RegistroFormulario {
+    
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iiexamengrupo0110.Caso1_Decorator;
+package Caso1_Decorator;
 
 /**
  *
@@ -16,7 +16,7 @@ public class Caso1_Decorator {
      */
     public static void main(String[] args) {
         // Se inicializa el stream
-        InputStream fistream=new FIStream("src/iiexamengrupo0110/caso1_decorator/test.txt");
+        InputStream fistream=new FIStream("src/caso1_decorator/test.txt");
         
         // Puedo leer bytes
         for (int i = 0; i < 4; i++) {

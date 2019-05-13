@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iiexamengrupo0110.Caso1_Decorator;
+package Caso1_Decorator;
 
 /**
  *
