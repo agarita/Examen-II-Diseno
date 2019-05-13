@@ -35,8 +35,14 @@ public class Caso1_Decorator {
         
         // Ahora puedo leer lineas
         fistream=new BIStream(fistream);
-        System.out.println(((BIStream)fistream).readLine());
+        System.out.print(((BIStream)fistream).readLine());
 
+        // Ahora convierto lo que leo a minuscula
+        fistream=new LCIStream(fistream);
+        for (int i = 0; i < 5; i++) { // 5 Por el cambio de linea
+            System.out.print((char)fistream.read()); // Se convierte a char xq es byte
+            
+        }
         
     }
     
