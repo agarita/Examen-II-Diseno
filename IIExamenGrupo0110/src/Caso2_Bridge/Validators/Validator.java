@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Caso2_Bridge;
+package Caso2_Bridge.Validators;
+
+import java.util.List;
 
 /**
  *
  * @author eadan
  */
-public class RegistroFormulario {
-    
+public interface Validator<T> {
+    List<String> validate(T info);
 }

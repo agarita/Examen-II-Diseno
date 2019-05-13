@@ -5,10 +5,27 @@
  */
 package Caso2_Bridge.Validators;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author eadan
  */
-public class RequeridoValidator {
+public class RequeridoValidator implements Validator<Object>{
+
+    public RequeridoValidator() {
+    }
+
+    @Override
+    public List validate(Object info) {
+        ArrayList<String> res = new ArrayList<String>();
+        if (info instanceof String&&((String)info).equals("")){
+            res.add("Cadena vacia recibida");
+        }else if (info==null){
+            res.add("Campo vacio recibido");
+        }
+        return res;
+    }
     
 }
